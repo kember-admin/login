@@ -1,0 +1,95 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+
+    font-family: sans-serif;
+
+}
+.contenedor{   /* este es el contenido que engloba a todos y facilita el modo responsive*/
+    width: 90%;  /*para que no abarque toda la pantalla sino hasta cierto pueto y deje espacio  a los lados*/
+    max-width: 1100px;  /* esto es para que la pantalla no crezca demasiado*/
+    margin: 0 auto; /*esto centra la pagina dejando el porcentaje restante de width*/
+}
+
+.encabezado, .contenido, .contenido-lateral, .pie-pagina{
+    padding: 1em 2em;
+}
+
+.contenido, .contenido-lateral, .pie-pagina{
+    float: left;
+    box-sizing: border-box;  /*esto da espaciado de margin y padding de manera automatica adentro de cada uno*/
+}
+
+.encabezado{
+    height: 60px;
+
+
+}
+.contenido{
+    width: 55%;
+}
+.kember{
+    color: rgb(233, 183, 20);
+    height: auto;    
+
+}
+
+.imagen{
+    width: 100%;
+    height: auto;
+       
+}
+
+.contenido-lateral{
+    width: 45%;
+    height: 548px;
+}
+
+.login{
+    height:30px;
+    width: auto;
+    margin: 5px;
+    border-radius: 9px;
+    color:  rgb(233, 183, 20);
+    font-weight: bold;
+}
+
+.btn{
+    height:35px; /*esto es para la altura del boton*/
+    margin: 5px;
+    border-radius: 9px;
+    color:  black;
+    font-weight: bold;
+    width:100px;
+
+}
+.registrarse{
+    margin: 5px;
+    color: rgb(233, 183, 20);
+}
+
+/*media query sirve para hacer responsive*/
+
+@media screen and (max-width: 800px) {  /* para tabletesto quiere decir si llega a un minimo de 800px tendra que tomar la forma 100% el contenido*/
+    
+    .contenido{
+        width: 100%;  
+    }
+    .contenido-lateral{
+        width: 100%;
+
+    } 
+}
+
+@media screen and (max-width:400px){  /* para celular esto quiere decir si llega a un minimo de 400px tendra que tomar la forma 100% el contenido*/
+ 
+
+    .contenedor{
+        width: 100%;  
+    }
+    
+}
